@@ -1,0 +1,79 @@
+characters = {
+	BMP_Arthur_Grenfell_Wauchope = {
+		name = BMP_Arthur_Grenfell_Wauchope
+		portraits = {
+			civilian = {
+				large = GFX_BMP_Arthur_Grenfell_Wauchope
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			expire = "1947.9.14"
+		}
+	}
+
+	BMP_Chaim_Weizmann = {
+		name = BMP_Chaim_Weizmann
+		portraits = {
+			civilian = {
+				small = GFX_BMP_Chaim_Weizmann
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = BMP_Chaim_Weizmann
+			allowed = {
+				tag = BMP
+			}
+			traits = {
+				compassionate_gentleman
+			}
+		}
+	}
+
+	BMP_Charles_Tegart = {
+		name = BMP_Charles_Tegart
+		portraits = {
+			army = {
+				large = GFX_BMP_Charles_Tegart_large
+				small = GFX_BMP_Charles_Tegart_small
+			}
+		}
+		advisor = {
+			cost = 100
+			slot = high_command
+			ledger = army
+			allowed = {
+				tag = BMP
+			}
+			traits = {
+				army_infantry_2
+			}
+		}
+		corps_commander = {
+			traits = {infantry_leader}
+			skill = 1
+			attack_skill = 1
+			defence_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+
+	BMP_Gershon_Zak = {
+		name = BMP_Gershon_Zak
+		portraits = {
+			army = {
+				large = GFX_BMP_Gershon_Zak_large
+				small = GFX_BMP_Gershon_Zak_small
+			}
+		}
+		navy_leader={
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			maneuvering_skill = 1
+			coordination_skill = 1
+		}
+	}
+}

@@ -4,4 +4,4 @@ tags={
 	"Fixes"
 }
 name="test_Jigoku"
-supported_version="1.15.0"
+supported_version="1.15.3"

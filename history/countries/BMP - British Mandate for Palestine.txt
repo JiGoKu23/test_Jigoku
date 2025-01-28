@@ -1,0 +1,74 @@
+capital = 454 #首都の設定
+set_stability = 0.3 #安定度の設定 1が100%で0が0%を表す
+set_war_support = 0.1 #戦争協力度の設定 1が100%で0が0%を表す
+add_ideas = {
+    limited_conscription #追加したい国民精神や法律のhoi4内部での名前(common/ideasのファイルにある)を書いていく
+    george_v
+}
+set_technology = {
+	infantry_weapons = 1 #追加したい技術を hoi4内部での名前(common/technologiesのファイルにある) = 1　で書いていく
+	infantry_weapons1 = 1
+	tech_support = 1
+	tech_engineers = 1
+	tech_recon = 1
+	tech_trucks = 1
+	motorised_infantry = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	basic_train = 1
+	trench_warfare = 1
+	fleet_in_being = 1
+	electronic_mechanical_engineering = 1
+	radio = 1
+	fuel_silos = 1
+	fuel_refining = 1
+}
+set_politics = {
+	ruling_party = neutrality #初期のイデオロギー
+	last_election = "1935.11.14" #最後の選挙
+	election_frequency = 48 #選挙の感覚
+	elections_allowed = no #選挙が許可されているか
+}
+set_popularities = { #合計して100になるように　イデオロギーの分布
+	democratic = 17 
+	fascism = 2
+	communism = 1
+	neutrality = 80
+}
+set_research_slots = 4
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = { #技術の追加
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+	}
+	create_equipment_variant = { #設計の追加
+		name = "Light Tank Mk. IV" #　設計の名前
+		type = light_tank_chassis_1 #　使っている機体のタイプ（今回は基本型軽戦車車体）
+		modules = { #モジュール設計　
+			main_armament_slot = tank_heavy_machine_gun #主砲
+			turret_type_slot = tank_light_one_man_tank_turret #砲塔 
+			suspension_type_slot = tank_christie_suspension #サスペンション
+			armor_type_slot = tank_riveted_armor #　装甲
+			engine_type_slot = tank_gasoline_engine # エンジン
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 2 #エンジンの強化
+			tank_nsb_armor_upgrade = 1 #　装甲の強化
+		}
+		icon = "GFX_ENG_basic_light_tank_medium" #戦車のアイコン
+		obsolete = yes #used for oob #　旧式化しているか
+	}
+}
+else = {
+	set_technology = {
+		gwtank = 1
+	}
+}
+recruit_character = BMP_Arthur_Grenfell_Wauchope
+recruit_character = BMP_Chaim_Weizmann
+recruit_character = BMP_Charles_Tegart
+recruit_character = BMP_Gershon_Zak
+load_oob = "BMP_1936"

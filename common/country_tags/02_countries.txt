@@ -1,0 +1,1 @@
+BMP = "countries/British Mandate for Palestine.txt"

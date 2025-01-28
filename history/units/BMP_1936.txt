@@ -1,0 +1,39 @@
+division_template = {
+	name = "Infantry Division"			# 1st - 5th divisions = fully equipped, others = reserve divisions
+	division_names_group = ENG_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+        infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+       	engineer = { x = 0 y = 0 }
+       	artillery = { x = 0 y = 1 }
+	}
+}
+
+units = {
+	division = {
+		name = "First Division" #師団の名前
+		location = 4206 #師団のポップ位置　プロビンス番号
+		division_template = "Infantry Division" #師団テンプレートは何を用いるか
+		start_experience_factor = 0.2 #師団の熟練度　1が最大0が最小　0.3が一般
+		start_equipment_factor = 0.7 #師団の充足率
+
+	}
+	division = {
+		name = "Second Division"
+		location = 4206 #師団のポップ位置　プロビンス番号
+		division_template = "Infantry Division" #師団テンプレートは何を用いるか
+		start_experience_factor = 0.2 #師団の熟練度　1が最大0が最小　0.3が一般
+		start_equipment_factor = 0.7 #師団の充足率
+
+	}
+}

@@ -1,0 +1,26 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_BMP_Arthur_Grenfell_Wauchope"
+		textureFile = "gfx/leaders/BMP/BMP_Arthur_Grenfell_Wauchope.dds"
+	}
+	spriteType = {
+		name = "GFX_BMP_Chaim_Weizmann"
+		textureFile = "gfx/leaders/BMP/BMP_Chaim_Weizmann.png"
+	}
+	spriteType = {
+		name = "GFX_BMP_Charles_Tegart_large"
+		textureFile = "gfx/leaders/BMP/BMP_Charles_Tegart_large.dds"
+	}
+	spriteType = {
+		name = "GFX_BMP_Charles_Tegart_small"
+		textureFile = "gfx/leaders/BMP/BMP_Charles_Tegart_small.dds"
+	}
+	spriteType = {
+		name = "GFX_BMP_Gershon_Zak_large"
+		textureFile = "gfx/leaders/BMP/BMP_Gershon_Zak_large.dds"
+	}
+	spriteType = {
+		name = "GFX_BMP_Gershon_Zak_small"
+		textureFile = "gfx/leaders/BMP/BMP_Gershon_Zak_small.dds"
+	}
+}

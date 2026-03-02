@@ -1,0 +1,11 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_FIS_leader"
+		textureFile = "gfx/leaders/FIS/FIS_leader.dds"
+	}
+
+		spriteType = {
+		name = "GFX_FIS_leader_small"
+		textureFile = "gfx/leaders/FIS/FIS_leader_small.dds"
+	}
+}

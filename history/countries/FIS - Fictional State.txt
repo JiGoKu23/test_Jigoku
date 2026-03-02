@@ -1,9 +1,8 @@
-capital = 454 #首都の設定
+capital = 647 #首都の設定
 set_stability = 0.3 #安定度の設定 1が100%で0が0%を表す
 set_war_support = 0.1 #戦争協力度の設定 1が100%で0が0%を表す
 add_ideas = {
     limited_conscription #追加したい国民精神や法律のhoi4内部での名前(common/ideasのファイルにある)を書いていく
-    george_v
 }
 set_technology = {
 	infantry_weapons = 1 #追加したい技術を hoi4内部での名前(common/technologiesのファイルにある) = 1　で書いていく
@@ -67,8 +66,5 @@ else = {
 		gwtank = 1
 	}
 }
-recruit_character = BMP_Arthur_Grenfell_Wauchope
-recruit_character = BMP_Chaim_Weizmann
-recruit_character = BMP_Charles_Tegart
-recruit_character = BMP_Gershon_Zak
-load_oob = "BMP_1936"
+recruit_character = FIS_leader
+load_oob = "FIS_1936"

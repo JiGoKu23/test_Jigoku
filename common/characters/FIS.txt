@@ -1,0 +1,15 @@
+characters = {
+	FIS_leader = {
+		name = FIS_leader
+		portraits = {
+			civilian = {
+				large = GFX_FIS_leader
+				small = GFX_FIS_leader_small
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			expire = "1947.9.14"
+		}
+	}
+}

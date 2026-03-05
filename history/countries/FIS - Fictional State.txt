@@ -67,4 +67,8 @@ else = {
 	}
 }
 recruit_character = FIS_leader
+recruit_character = FIS_leader_1
+recruit_character = FIS_leader_2
+recruit_character = FIS_leader_3
+recruit_character = FIS_leader_4
 load_oob = "FIS_1936"

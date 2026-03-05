@@ -1,0 +1,82 @@
+add_namespace = tj_FIS
+
+country_event = {
+	id = tj_FIS.1
+	title = tj_FIS.1.t
+	desc = tj_FIS.1.d
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			add_political_power = 100 #政治力を100追加する
+		}
+	}
+	option = {
+		name = tj_FIS.1.a
+		custom_effect_tooltip = tj_FIS.1.a.tt
+		hidden_effect = {
+			set_politics = { 
+				ruling_party = fascism #与党の政体
+				elections_allowed = no #選挙が許可されているか
+			}	
+			set_popularities = { #政党支持率を決定する、合計が100になるように
+				fascism = 60 #ファシズム60％に
+				democratic = 20 #民主主義20％に
+				neutrality = 10 #中道主義10％に
+				communism = 10 #共産主義10％に
+			}
+		}
+	}
+	option = {
+		name = tj_FIS.1.b
+		custom_effect_tooltip = tj_FIS.1.b.tt
+		hidden_effect = {
+			set_politics = { 
+				ruling_party = communism #与党の政体
+				elections_allowed = no #選挙が許可されているか
+			}	
+			set_popularities = { #政党支持率を決定する、合計が100になるように
+				fascism = 10 #ファシズム10％に
+				democratic = 20 #民主主義20％に
+				neutrality = 10 #中道主義10％に
+				communism = 60 #共産主義60％に
+			}			
+		}
+
+	}
+	option = {
+		name = tj_FIS.1.c
+		custom_effect_tooltip = tj_FIS.1.c.tt
+		hidden_effect = {
+			retire_character = FIS_leader
+			set_popularities = { #政党支持率を決定する、合計が100になるように
+				fascism = 10 #ファシズム10％に
+				democratic = 20 #民主主義20％に
+				neutrality = 60 #中道主義60％に
+				communism = 10 #共産主義10％に
+			}		
+		}
+	}
+	option = {
+		name = tj_FIS.1.e
+	}
+}
+
+news_event = {
+	id = tj_FIS.2
+	title = tj_FIS.2.t
+	desc = tj_FIS.2.d
+	picture = GFX_FIS_event_2
+	major = yes
+	trigger = {
+		date > 1936.1.2
+		not = {
+			has_global_flag = tj_FIS_2
+		}
+	}
+	immediate = {
+		set_global_flag = tj_FIS_2
+	}
+	option = {
+		name = tj_FIS.2.a
+	}
+}
